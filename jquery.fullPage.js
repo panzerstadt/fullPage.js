@@ -391,11 +391,12 @@
             var activeSection = $(SECTION_ACTIVE_SEL);
             var sectionIndex = activeSection.index(SECTION_SEL);
 
+            // Super annoying on IE
             //isn't it the first section?
-            if(sectionIndex){
+            //if(sectionIndex){
                 //adjusting the position for the current section
-                FP.silentMoveTo(sectionIndex + 1);
-            }
+            //    FP.silentMoveTo(sectionIndex + 1);
+            //}
 
             isResizing = false;
             $.isFunction( options.afterResize ) && resizing && options.afterResize.call(container);
@@ -828,7 +829,7 @@
         }
 
 
-        var touchStartY = 0;
+        var touchStartY = 0;isn't it the first section?
         var touchStartX = 0;
         var touchEndY = 0;
         var touchEndX = 0;
